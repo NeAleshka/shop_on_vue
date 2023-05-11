@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Футболка",
+      "price": 1000,
+      "image": "https://vikowest.by/upload/iblock/025/025c3f8e1f8f8468b32ec7e3ab6bcc70.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Джинсы",
+      "price": 2500,
+      "image": "https://static.insales-cdn.com/files/1/4954/20255578/original/jincy1__1_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Свитшот",
+      "price": 1500,
+      "image": "https://files.gifts.ru/reviewer/tb/90/wu31b005_17_500.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Кофта",
+      "price": 2000,
+      "image": "https://static.fix-price.by/upload/resize_cache/iblock/9d2/330_330_0/9d25e0762b2cb0ddd601e659e7f50120.png"
+    },
+    {
+      "id": 5,
+      "title": "Брюки",
+      "price": 3000,
+      "image": "https://incity.ru/upload/iblock/f9e/lnutu4a6kbs2xk3y5hq9o5hszt9pf0en.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Платье",
+      "price": 3500,
+      "image": "https://bellapotemkina.com/wa-data/public/shop/products/08/10/11008/images/20660/20660.970.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Юбка",
+      "price": 2500,
+      "image": "https://elema.by/upload/iblock/d57/gq7q2g8654aqz4s4lz6m7zdfgw8fy35s/yubka_zhenskaya_4k_10974_1_goluboy_pered.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Костюм",
+      "price": 6000,
+      "image": "https://www.berton.by/assets/images/products/927/big/mannermoda3545.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Блуза",
+      "price": 1500,
+      "image": "https://maltsevastyle.ru/upload/iblock/db8/db8d1f9dba95203526ce5e86b9c5135f.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Свитер",
+      "price": 4000,
+      "image": "https://imageproxy.fh.by/sUwjidvmt9e9f86QK51uSMmvELFXouKc5KehaZQ0gdg/w:477/h:715/q:95/czM6Ly9maC1wcm9kdWN0aW9uLXJmMy81MjY3MDQvNDJlNjQzZDAtMWYxOS0xMWVkLThiOTEtMDA1MDU2ODM2NjFi.jpg"
+    }
+  ]
+}
