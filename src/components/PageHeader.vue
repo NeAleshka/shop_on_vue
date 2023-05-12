@@ -7,30 +7,49 @@
         ><span class="font-bold">{{ $t("header.categories") }}</span>
         <q-menu>
           <q-list style="min-width: 100px">
-            <q-item clickable v-close-popup>
-              <q-item-section>Мужская одежда</q-item-section>
+            <q-item
+              clickable
+              v-close-popup
+              @click="$router.push('/category/smartphones')"
+            >
+              <q-item-section>Смартфоны</q-item-section>
             </q-item>
-            <q-item clickable v-close-popup>
-              <q-item-section>Женская одежда</q-item-section>
+            <q-item
+              clickable
+              v-close-popup
+              @click="$router.push('/category/womens-dresses')"
+            >
+              <q-item-section>Платья</q-item-section>
             </q-item>
-            <q-item clickable v-close-popup>
-              <q-item-section>Детская одежда</q-item-section>
+            <q-item
+              clickable
+              v-close-popup
+              @click="$router.push('/category/laptops')"
+            >
+              <q-item-section>Ноутбуки</q-item-section>
+            </q-item>
+            <q-item
+              clickable
+              v-close-popup
+              @click="$router.push('/category/womens-shoes')"
+            >
+              <q-item-section>Туфли женские</q-item-section>
             </q-item>
           </q-list>
         </q-menu>
       </q-btn>
       <q-btn flat :noCaps="true"
-        ><span class="font-bold" @click="$router.push('about_us')">{{
+        ><span class="font-bold" @click="$router.push('/about_us')">{{
           $t("header.about_us")
         }}</span></q-btn
       >
-      <q-btn flat :noCaps="true" @click="$router.push('delivery')">
+      <q-btn flat :noCaps="true" @click="$router.push('/delivery')">
         <span class="font-bold">{{ $t("header.delivery") }}</span>
       </q-btn>
-      <q-btn flat :noCaps="true" @click="$router.push('payment')"
+      <q-btn flat :noCaps="true" @click="$router.push('/payment')"
         ><span class="font-bold">{{ $t("header.payment") }}</span></q-btn
       >
-      <q-btn flat :noCaps="true" @click="$router.push('warranty')"
+      <q-btn flat :noCaps="true" @click="$router.push('/warranty')"
         ><span class="font-bold">{{ $t("header.warranty") }}</span></q-btn
       >
     </div>
@@ -41,6 +60,8 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
+  name: "PageHeader",
+
   methods: {
     changeLocale(locale: string) {
       this.$i18n.locale = locale;

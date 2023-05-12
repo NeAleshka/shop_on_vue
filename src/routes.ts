@@ -1,11 +1,22 @@
 import { createRouter, createWebHistory } from "vue-router";
-import {MainPage,AboutPage,DeliveryPage,PaymentPage,WarrantyPage} from "./pages";
+import {
+  MainPage,
+  AboutPage,
+  DeliveryPage,
+  PaymentPage,
+  WarrantyPage,
+  CategoryProducts,
+} from "./pages";
 
 export default createRouter({
   routes: [
     {
       path: "/",
       component: MainPage,
+    },
+    {
+      path: "/category/:category",
+      component: CategoryProducts,
     },
     {
       path: "/about_us",
