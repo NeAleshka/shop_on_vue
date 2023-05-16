@@ -8,11 +8,12 @@ import "@quasar/extras/material-icons-round/material-icons-round.css";
 import "quasar/dist/quasar.css";
 import routes from "./routes";
 import i18n from "./i18n";
+import "swiper/css";
+import "swiper/css/bundle";
 
 const app = createApp(App);
 app.use(Quasar, {}).use(routes);
 
 // Добавление i18n в глобальный контекст
-app.config.globalProperties.$i18n = i18n;
 
 app.use(i18n).mount("#app");

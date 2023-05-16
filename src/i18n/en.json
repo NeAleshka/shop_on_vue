@@ -4,6 +4,7 @@
     "about_us": "About Us",
     "delivery": "Delivery",
     "warranty": "Warranty",
-    "payment": "Payment"
+    "payment": "Payment",
+    "user":"Hello,{name}"
   }
 }

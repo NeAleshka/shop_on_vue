@@ -4,6 +4,7 @@
     "about_us": "О нас",
     "delivery": "Доставка",
     "warranty": "Гарантия",
-    "payment": "Оплата"
+    "payment": "Оплата",
+    "user": "Hello,{name}"
   }
 }
