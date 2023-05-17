@@ -6,7 +6,11 @@ module.exports = {
     "./src/**/**/*.{js,ts,jsx,tsx,vue}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        xl: "1350px",
+      },
+    },
     fontFamily: {
       satoshi: "Satoshi, sans-serif",
     },

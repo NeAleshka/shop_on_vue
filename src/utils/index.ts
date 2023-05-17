@@ -1,8 +1,8 @@
 import { useI18n } from "vue-i18n";
 import { MessageSchema } from "../i18n";
-import en from "../i18n/en.json";
+import en from "../i18n/locales/en.json";
 
-export const useTraslate = () => {
+export const useTranslate = () => {
   const { t, locale } = useI18n<
     {
       message: MessageSchema;
@@ -15,5 +15,5 @@ export const useTraslate = () => {
       en: en,
     },
   });
-  return { t,locale };
+  return { t, locale };
 };

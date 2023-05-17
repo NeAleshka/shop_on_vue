@@ -11,9 +11,11 @@
       </div>
     </div>
     <q-separator color="#0000001A" />
-    <div class="w-fit mx-auto mt-[10px] flex space-x-[44px]">
+    <div
+      class="w-full mt-[10px] flex space-x-0 justify-center md:space-x-[44px]"
+    >
       <q-btn flat :noCaps="true"
-        ><span>{{ $t("header.categories") }}</span>
+        ><span>{{ translate("header.categories") }}</span>
         <q-menu>
           <q-list style="min-width: 100px">
             <q-item
@@ -49,7 +51,7 @@
       </q-btn>
       <q-btn flat :noCaps="true"
         ><span @click="$router.push('/about_us')">{{
-          $t("header.about_us")
+          translate("header.about_us")
         }}</span></q-btn
       >
       <q-btn flat :noCaps="true" @click="$router.push('/delivery')">
@@ -69,20 +71,17 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { useTraslate } from "../utils";
+import { useTranslate } from "../utils";
 
 export default defineComponent({
   name: "PageHeader",
   setup() {
-    const translate = useTraslate().t;
-    const locale = useTraslate().locale;
+    const translate = useTranslate().t;
+    const locale = useTranslate().locale;
     return {
       translate,
       locale,
     };
-  },
-  mounted() {
-    console.log(typeof this.locale);
   },
 
   methods: {

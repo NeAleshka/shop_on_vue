@@ -1,3 +1,29 @@
+import {
+  A11y,
+  Autoplay,
+  Controller,
+  EffectCoverflow,
+  EffectCube,
+  EffectFade,
+  EffectFlip,
+  EffectCreative,
+  EffectCards,
+  HashNavigation,
+  Keyboard,
+  Lazy,
+  Mousewheel,
+  Navigation,
+  Pagination,
+  Parallax,
+  Scrollbar,
+  Thumbs,
+  Virtual,
+  Zoom,
+  FreeMode,
+  Grid,
+  Manipulation,
+} from "swiper/swiper";
+
 declare module "swiper" {
   export {
     A11y,

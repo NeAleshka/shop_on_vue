@@ -1,11 +1,11 @@
 <template>
-  <div class="w-full px-[80px]">
+  <div class="px-[20px] xl:px-[80px] mx-auto w-full">
     <h2
-      class="mt-[80px] text-[24px] text-dark-primary w-fit mx-auto font-normal"
+      class="mt-[80px] w-fit text-[24px] text-dark-primary mx-auto font-normal"
     >
       What makes our brand different
     </h2>
-    <div class="flex justify-between">
+    <div class="flex justify-center w-full md:!justify-between">
       <FeatureBlock v-for="block in dataBlocks" :data-block="block" />
     </div>
   </div>

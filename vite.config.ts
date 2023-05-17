@@ -1,6 +1,5 @@
 import { defineConfig } from "vite";
-import { fileURLToPath, URL } from "node:url";
-import { resolve, dirname } from "node:path";
+import path from "node:path";
 import vue from "@vitejs/plugin-vue";
 import { quasar, transformAssetUrls } from "@quasar/vite-plugin";
 import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
@@ -12,13 +11,9 @@ export default defineConfig({
       template: { transformAssetUrls },
     }),
     VueI18nPlugin({
-      include: resolve(
-        dirname(fileURLToPath(import.meta.url)),
-        "./src/i18n/locales/**"
-      ),
+      include: [path.resolve(__dirname, "./src/locales/**")],
     }),
+
     quasar(),
   ],
 });
-
-

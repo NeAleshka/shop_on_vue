@@ -4,7 +4,7 @@
     <div
       class="absolute top-[130px] bg-white pl-[56px] pt-[50px] pr-[60px] max-w-[630px] rounded-2xl"
       :style="{
-        left: width < 1500 ? `${width - width / 1.6}px` : '',
+        left: width < 1500 ? `${width - 830}px` : '',
         right: width > 1500 ? '80px' : '',
       }"
     >
@@ -37,15 +37,6 @@ export default defineComponent({
     return {
       width: useWindowSize().width,
     };
-  },
-
-  computed: {
-    calcRight() {
-      const res = (this.width - 800) / 2;
-      console.log(res);
-
-      return res;
-    },
   },
 });
 </script>

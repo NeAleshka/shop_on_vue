@@ -14,6 +14,4 @@ import "swiper/css/bundle";
 const app = createApp(App);
 app.use(Quasar, {}).use(routes);
 
-// Добавление i18n в глобальный контекст
-
 app.use(i18n).mount("#app");

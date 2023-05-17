@@ -1,5 +1,5 @@
 <template>
-  <div class="relative max-w-[1440px]">
+  <div class="max-w-[1440px]">
     <hero-block />
     <features-block />
   </div>
