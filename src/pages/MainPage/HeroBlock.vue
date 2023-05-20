@@ -1,13 +1,15 @@
 <template>
-  <div class="h-[730px] w-[1440px]">
+  <div class="h-auto max-w-[1440px]">
     <swiper
       :pagination="{
         type: 'bullets',
         clickable: true,
       }"
       :modules="modules"
-      effect="cube"
       :loop="true"
+      :autoHeight="true"
+      effect="flip"
+      :mousewheel="true"
     >
       <swiper-slide>
         <luxury-banner />
@@ -24,15 +26,16 @@ import { defineComponent } from "vue";
 
 import { Swiper, SwiperSlide } from "swiper/vue";
 //@ts-ignore
-import { Pagination, EffectCube } from "swiper";
+import { Pagination, EffectCube, EffectFlip, Mousewheel } from "swiper";
 import LuxuryBanner from "../../components/Banners/LuxuryHome.vue";
 import FurnitureBrand from "../../components/Banners/FurnitureBrand.vue";
+
 export default defineComponent({
   name: "HeroBlock",
 
   setup() {
     return {
-      modules: [Pagination, EffectCube],
+      modules: [Pagination, EffectFlip, Mousewheel],
     };
   },
   components: {

@@ -2,23 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@layer components {
+  .smallBannerLuxury {
+    @apply bg-gray-300 flex flex-col items-start px-5 pt-[20px];
+  }
+
+  .largeBannerLuxury {
+    @apply absolute top-[130px] bg-white pl-[56px] pt-[50px] pr-[60px] max-w-[630px] rounded-2xl right-[80px];
+  }
 }
 
 * {
+  @apply p-0 m-0 box-border;
   font-family: ClashDisplay, sans-serif;
 }
+
 .swiper-pagination-bullet {
-  background-color: white !important;
-  width: 12px !important;
-  height: 12px !important;
-  opacity: 0.5 !important;
+  @apply bg-white w-[12px] h-[12px] opacity-50 !important;
 }
+
 .swiper-pagination-bullet-active {
-  opacity: 1 !important;
+  @apply !opacity-100;
 }
 
 @font-face {

@@ -18,3 +18,10 @@ export interface Product {
   thumbnail: string;
   images: string[];
 }
+
+export interface INavBarItems {
+  label: string;
+  icon: string;
+  separator: boolean;
+  hasChildren?: boolean;
+}

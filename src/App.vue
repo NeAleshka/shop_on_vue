@@ -1,42 +1,12 @@
 <template>
-  <div class="flex justify-center">
-    <div
-      class="max-w-[1440px]"
-      :style="{
-        width: `${windowWidth}px`,
-      }"
-    >
+  <q-layout>
+    <div class="max-w-[1440px] mx-auto">
       <page-header />
       <router-view />
     </div>
-  </div>
+  </q-layout>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import PageHeader from "./components/PageHeader.vue";
-import { useWindowSize } from "@vueuse/core";
-
-export default {
-  components: {
-    PageHeader,
-  },
-
-  computed: {
-    resizeWindow() {
-      return useWindowSize().width;
-    },
-  },
-
-  data() {
-    return {
-      windowWidth: useWindowSize().width,
-    };
-  },
-
-  watch: {
-    windowWidth() {
-      console.log(this.windowWidth);
-    },
-  },
-};
 </script>

@@ -5,6 +5,20 @@
     "delivery": "Delivery",
     "warranty": "Warranty",
     "payment": "Payment",
-    "user":"Hello,{name}"
+    "account":"Account Info",
+    "backet":"Backet"
+  },
+  "categories":{
+    "smartphones":"Smartphones",
+    "laptops":"Laptops",
+    "womens-shoes":"Womens Shoes",
+    "womens-dresses":"Womens Dresses"
+  },
+  "langs":{
+    "en":"English",
+    "ru":"Russian"
+  },
+  "actions":{
+    "view-collections":"View collections"
   }
 }

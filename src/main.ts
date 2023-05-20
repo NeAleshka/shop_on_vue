@@ -10,8 +10,11 @@ import routes from "./routes";
 import i18n from "./i18n";
 import "swiper/css";
 import "swiper/css/bundle";
+import { createPinia } from "pinia";
 
 const app = createApp(App);
+const pinia = createPinia();
+
 app.use(Quasar, {}).use(routes);
 
-app.use(i18n).mount("#app");
+app.use(pinia).use(i18n).mount("#app");

@@ -5,6 +5,20 @@
     "delivery": "Доставка",
     "warranty": "Гарантия",
     "payment": "Оплата",
-    "user": "Hello,{name}"
+    "account": "Личный кабинет",
+    "backet": "Корзина"
+  },
+  "categories": {
+    "smartphones": "Smartphones",
+    "laptops": "Laptops",
+    "womens-shoes": "Womens Shoes",
+    "womens-dresses": "Womens Dresses"
+  },
+  "langs": {
+    "en": "Английский",
+    "ru": "Русский"
+  },
+  "actions": {
+    "view-collections": "Посмотреть коллецию"
   }
 }
