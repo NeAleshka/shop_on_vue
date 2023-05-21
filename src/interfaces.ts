@@ -19,9 +19,10 @@ export interface Product {
   images: string[];
 }
 
-export interface INavBarItems {
+export interface INavBarItem {
   label: string;
   icon: string;
   separator: boolean;
   hasChildren?: boolean;
+  path?: string;
 }

@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <nav-bar :openDrawer="openDrawer" />
+    <nav-bar :openDrawer="openDrawer" @closeNavBar="closeNavBar" />
     <q-separator color="#0000001A" />
     <div
       class="headerBottum w-full mt-[10px] space-x-0 justify-center md:space-x-[44px]"
@@ -76,14 +76,11 @@
       <q-btn flat :noCaps="true" @click="$router.push('/warranty')"
         ><span>{{ translate("header.warranty") }}</span></q-btn
       >
-      <button @click="useStore().setLocale('ru')">ru</button>
-      <button @click="useStore().setLocale('en')">en</button>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { useStore } from "../store";
 import { useTranslate } from "../utils";
 import NavBar from "./NavBar.vue";
 import { ref } from "vue";
@@ -95,14 +92,20 @@ let openDrawer = ref(false);
 const openNavBar = () => {
   openDrawer.value = true;
 };
+
+const closeNavBar = () => {
+  openDrawer.value = false;
+};
 </script>
 <style>
 .leftButtuns {
   display: inline-flex;
 }
+
 .navBarBtn {
   display: none !important;
 }
+
 .headerBottum {
   display: flex;
 }
@@ -111,6 +114,7 @@ const openNavBar = () => {
   .leftButtuns {
     display: none;
   }
+
   .navBarBtn {
     display: inline-flex !important;
   }
