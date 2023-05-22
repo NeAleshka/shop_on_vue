@@ -37,10 +37,13 @@
 </template>
 
 <script lang="ts" setup>
-import { defineProps, PropType, reactive } from "vue";
+import { PropType, reactive } from "vue";
 import { INavBarItem } from "../interfaces";
 import { useRouter } from "vue-router";
 import { useTranslate } from "../utils";
+import { useStore } from "../store";
+
+const setSelectedLabel = useStore().setLabel;
 
 const props = defineProps({
   menuItem: {
@@ -53,6 +56,7 @@ const router = useRouter();
 
 const itemClick = (node: any) => {
   if (node.children || !node.path) return;
+  setSelectedLabel(node.label);
   router.push(`${node.path}`);
 };
 // there you should give categories from server

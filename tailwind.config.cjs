@@ -14,14 +14,14 @@ module.exports = {
         "light-grey": "#F9F9F9",
         "dark-primary": "#2A254B",
       },
-    },
-    fontFamily: {
-      satoshi: "Satoshi, sans-serif",
-    },
+      fontFamily: {
+        satoshi: "Satoshi, sans-serif",
+      },
 
-    textColor: {
-      "dark-primary": "#2A254B",
-      "light-grey": "#F9F9F9",
+      textColor: {
+        "dark-primary": "#2A254B",
+        "light-grey": "#F9F9F9",
+      },
     },
   },
   plugins: [],

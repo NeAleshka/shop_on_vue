@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
 import i18n from "../i18n";
+import { ref } from "vue";
 
 export const useStore = defineStore("AppStore", () => {
   const setLocale = (newLocale: string) => {
@@ -7,5 +8,10 @@ export const useStore = defineStore("AppStore", () => {
     i18n.global.locale.value = newLocale;
   };
 
-  return { setLocale };
+  let selectedLabel = ref("");
+  const setLabel = (label: string) => {
+    selectedLabel.value = label;
+  };
+
+  return { setLocale, setLabel, selectedLabel };
 });

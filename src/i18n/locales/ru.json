@@ -20,5 +20,9 @@
   },
   "actions": {
     "view-collections": "Посмотреть коллецию"
+  },
+  "titles": {
+    "our-popular-products": "Наши популярные товары",
+    "new-ceramics": "Новое из керамики"
   }
 }

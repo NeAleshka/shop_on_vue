@@ -7,10 +7,10 @@
     @click.stop
     :model-value="props.openDrawer"
     class="flex flex-col justify-between"
-    @before-hide="closeNavBar"
+    @before-hide="closeNavBar('label')"
   >
     <q-list>
-      <template v-for="(menuItem, index) in menuList" :key="index">
+      <template v-for="menuItem in menuList">
         <nav-bar-item :menuItem="menuItem" />
       </template>
     </q-list>
@@ -36,10 +36,9 @@
 </template>
 
 <script lang="ts" setup>
-import { reactive, defineProps, defineEmits } from "vue";
+import { reactive } from "vue";
 import { useTranslate } from "../utils";
 import { INavBarItem } from "../interfaces";
-import { useRouter } from "vue-router";
 import NavBarItem from "./NabBarItem.vue";
 
 const props = defineProps({
@@ -49,15 +48,13 @@ const props = defineProps({
   },
 });
 const emit = defineEmits<{
-  closeNavBar;
+  closeNavBar: [label: string];
 }>();
 const { t: translate } = useTranslate();
 
-const closeNavBar = () => {
-  emit("closeNavBar");
+const closeNavBar = (label: string) => {
+  emit("closeNavBar", label);
 };
-
-const router = useRouter();
 
 let menuList: INavBarItem[] = reactive([
   {

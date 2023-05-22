@@ -1,3 +1,5 @@
+import { CSSProperties } from "vue";
+
 export interface ISelectedCategoryProducts {
   products: Product[];
   total: number;
@@ -25,4 +27,11 @@ export interface INavBarItem {
   separator: boolean;
   hasChildren?: boolean;
   path?: string;
+}
+
+export interface IHorizontalInput {
+  inputStyles: CSSProperties;
+  buttonStyles: CSSProperties;
+  buttonText: string;
+  placeHolder: string;
 }

@@ -5,20 +5,24 @@
     "delivery": "Delivery",
     "warranty": "Warranty",
     "payment": "Payment",
-    "account":"Account Info",
-    "backet":"Backet"
+    "account": "Account Info",
+    "backet": "Backet"
   },
-  "categories":{
-    "smartphones":"Smartphones",
-    "laptops":"Laptops",
-    "womens-shoes":"Womens Shoes",
-    "womens-dresses":"Womens Dresses"
+  "categories": {
+    "smartphones": "Smartphones",
+    "laptops": "Laptops",
+    "womens-shoes": "Womens Shoes",
+    "womens-dresses": "Womens Dresses"
   },
-  "langs":{
-    "en":"English",
-    "ru":"Russian"
+  "langs": {
+    "en": "English",
+    "ru": "Russian"
   },
-  "actions":{
-    "view-collections":"View collections"
+  "actions": {
+    "view-collections": "View collections"
+  },
+  "titles": {
+    "our-popular-products": "Our popular products",
+    "new-ceramics": "New ceramics"
   }
 }

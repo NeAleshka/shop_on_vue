@@ -84,7 +84,6 @@
 import { useTranslate } from "../utils";
 import NavBar from "./NavBar.vue";
 import { ref } from "vue";
-
 let { t: translate } = useTranslate();
 
 let openDrawer = ref(false);
