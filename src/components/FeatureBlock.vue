@@ -11,8 +11,6 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "FeatureBlock",
-
-  
   props: {
     dataBlock: {
       type: Object,

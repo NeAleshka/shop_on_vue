@@ -6,12 +6,17 @@
       What makes our brand different
     </h2>
     <div class="flex justify-center w-full md:!justify-between">
-      <feature-block v-for="block in FeaturesData" :data-block="block" />
+      <feature-block v-for="block in featuresData" :data-block="block" />
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import FeaturesData from "./FeaturesData";
+import { useStore } from "../../store";
 import FeatureBlock from "../../components/FeatureBlock.vue";
+import { storeToRefs } from "pinia";
+
+
+const store = useStore();
+const { featuresData } = storeToRefs(store);
 </script>

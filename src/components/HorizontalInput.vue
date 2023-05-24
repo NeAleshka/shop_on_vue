@@ -1,12 +1,12 @@
 <template>
   <div class="flex">
     <input
-      class="pl-[32px] py-[17px] bg-[#F9F9F9] min-w-[350px]"
+      class="pl-[32px] py-[17px] bg-[#F9F9F9] min-w-[350px] outline-none"
       :style="props.inputStyles"
       :placeholder="props.placeHolder"
     />
     <button
-      class="px-[32px] py-[16px] text-white bg-[#2A254B]"
+      class="px-[32px] py-[16px] text-[#F9F9F9] bg-[#2A254B]"
       :style="props.buttonStyles"
       @click="btnClick"
     >
